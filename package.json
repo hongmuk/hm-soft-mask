@@ -1,0 +1,50 @@
+{
+  "name": "@hm-soft/mask",
+  "version": "0.1.0",
+  "description": "개인정보 마스킹 — 이름·전화·이메일·카드·계좌·주민번호 가리기 (의존성 0)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mask",
+    "masking",
+    "pii",
+    "privacy",
+    "개인정보",
+    "마스킹",
+    "korean",
+    "hmsoft"
+  ],
+  "author": "HMSOFT",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongmuk/hm-soft-mask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hongmuk/hm-soft-mask/issues"
+  },
+  "homepage": "https://github.com/hongmuk/hm-soft-mask#readme"
+}
